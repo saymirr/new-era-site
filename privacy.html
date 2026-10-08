@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Era Privacy Policy</title>
+<style>
+:root{--bg:#f7f7f4;--text:#16181b;--muted:#5d6670;--line:#dcdfe3;--accent:#0f8a5f}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0f1216;--text:#e8edf2;--muted:#9aa5b1;--line:#262d35;--accent:#34d399}}
+:root[data-theme="dark"]{--bg:#0f1216;--text:#e8edf2;--muted:#9aa5b1;--line:#262d35;--accent:#34d399}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:720px;margin:0 auto;padding:40px 16px 64px}
+h1{font-size:28px;margin:0 0 4px}
+h2{font-size:18px;margin:32px 0 8px}
+p,li{color:var(--text)}
+.muted{color:var(--muted)}
+ul{padding-left:20px}
+code{font-family:ui-monospace,Consolas,monospace;font-size:14px;background:var(--line);padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
+a{color:var(--accent)}
+.box{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:20px}
+</style>
+</head>
+<body>
+<main>
+  <h1>New Era Privacy Policy</h1>
+  <p class="muted">Chrome extension for paper-trading Solana tokens. Effective October 8, 2026.</p>
+
+  <div class="box"><b>In short:</b> New Era has no accounts and no server of its own. It does not collect, sell or share personal data. Everything you do in it is stored on your own computer.</div>
+
+  <h2>What stays on your computer</h2>
+  <p>New Era saves the following in Chrome's local extension storage, on your device only:</p>
+  <ul>
+    <li>Your paper wallets, paper trades, positions, limit orders and deposits</li>
+    <li>Your trading rules, token filters, presets and settings</li>
+    <li>Journal notes and any GIF or image you add to trade cards or the panel background</li>
+    <li>If you choose to add them: public Solana wallet addresses for the paper-vs-real comparison, and an RPC URL (for example a Helius key)</li>
+  </ul>
+  <p>None of this is sent to the developer or to anyone else. Uninstalling the extension deletes it.</p>
+
+  <h2>Requests New Era makes</h2>
+  <p>To show prices and token data, New Era requests public market and blockchain data directly from these services. Requests contain only token addresses and, if you added them, public wallet addresses:</p>
+  <ul>
+    <li><b>DexScreener</b> (<code>api.dexscreener.com</code>): token and pool information</li>
+    <li><b>Jupiter</b> (<code>lite-api.jup.ag</code>): token prices and swap quotes used to simulate fills</li>
+    <li><b>Coinbase</b> (<code>api.coinbase.com</code>): the SOL to USD price</li>
+    <li><b>Solana RPC</b>: the public endpoint <code>api.mainnet-beta.solana.com</code>, a fallback public endpoint <code>solana.leorpc.com</code>, or the RPC URL you enter in Settings. Used for on-chain checks (such as early-block buyers and token authorities) and for live prices over a websocket.</li>
+  </ul>
+  <p>These services receive the request like any website visit (including your IP address) under their own privacy policies. New Era sends them no personal information.</p>
+
+  <h2>Pages New Era runs on</h2>
+  <p>The paper-trading panel appears on token pages of supported trading sites (pump.fun, Axiom, GMGN, Photon, BullX, DexScreener, Birdeye, Padre and Jupiter). It reads the token address from the page link and, on Axiom, a few public numbers shown on the token page (such as global fees and ATH). It does not read or change your account on those sites, your wallet connection, or anything you type there.</p>
+
+  <h2>What New Era never does</h2>
+  <ul>
+    <li>It never connects to a wallet, signs transactions or places real trades. All trades are simulated.</li>
+    <li>It never asks for or accepts private keys or seed phrases, and refuses input that looks like one.</li>
+    <li>It has no analytics, tracking, ads or third-party scripts.</li>
+  </ul>
+
+  <h2>Exports</h2>
+  <p>Files you export (backups, PnL exports, trade cards) are created only when you click to export, and are saved where you choose. Journal notes and trade reasons are left out of PnL exports.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+</main>
+</body>
+</html>
