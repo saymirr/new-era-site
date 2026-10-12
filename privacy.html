@@ -24,7 +24,7 @@ a{color:var(--accent)}
 <body>
 <main>
   <h1>New Era Privacy Policy</h1>
-  <p class="muted">Chrome extension for paper-trading Solana tokens. Effective October 8, 2026.</p>
+  <p class="muted">Chrome extension for paper-trading Solana tokens. Effective October 12, 2026.</p>
 
   <div class="box"><b>In short:</b> New Era has no accounts and no server of its own. It does not collect, sell or share personal data. Everything you do in it is stored on your own computer.</div>
 
@@ -34,7 +34,7 @@ a{color:var(--accent)}
     <li>Your paper wallets, paper trades, positions, limit orders and deposits</li>
     <li>Your trading rules, token filters, presets and settings</li>
     <li>Journal notes and any GIF or image you add to trade cards or the panel background</li>
-    <li>If you choose to add them: public Solana wallet addresses for the paper-vs-real comparison, and an RPC URL (for example a Helius key)</li>
+    <li>If you choose to add them: public Solana wallet addresses for the paper-vs-real comparison, an RPC URL (for example a Helius key) and a Jupiter API key</li>
   </ul>
   <p>None of this is sent to the developer or to anyone else. Uninstalling the extension deletes it.</p>
 
@@ -42,7 +42,7 @@ a{color:var(--accent)}
   <p>To show prices and token data, New Era requests public market and blockchain data directly from these services. Requests contain only token addresses and, if you added them, public wallet addresses:</p>
   <ul>
     <li><b>DexScreener</b> (<code>api.dexscreener.com</code>): token and pool information</li>
-    <li><b>Jupiter</b> (<code>lite-api.jup.ag</code>): token prices and swap quotes used to simulate fills</li>
+    <li><b>Jupiter</b> (<code>lite-api.jup.ag</code>, or <code>api.jup.ag</code> with your own API key if you add one): token prices, token info and swap quotes used to simulate fills</li>
     <li><b>Coinbase</b> (<code>api.coinbase.com</code>): the SOL to USD price</li>
     <li><b>Solana RPC</b>: the public endpoint <code>api.mainnet-beta.solana.com</code>, a fallback public endpoint <code>solana.leorpc.com</code>, or the RPC URL you enter in Settings. Used for on-chain checks (such as early-block buyers and token authorities) and for live prices over a websocket.</li>
   </ul>
