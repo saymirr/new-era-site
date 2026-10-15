@@ -24,7 +24,7 @@ a{color:var(--accent)}
 <body>
 <main>
   <h1>New Era Privacy Policy</h1>
-  <p class="muted">Chrome extension for paper-trading Solana tokens. Effective October 12, 2026.</p>
+  <p class="muted">Chrome extension for paper-trading Solana, Ethereum and Base tokens. Effective October 15, 2026.</p>
 
   <div class="box"><b>In short:</b> New Era has no accounts and no server of its own. It does not collect, sell or share personal data. Everything you do in it is stored on your own computer.</div>
 
@@ -43,13 +43,14 @@ a{color:var(--accent)}
   <ul>
     <li><b>DexScreener</b> (<code>api.dexscreener.com</code>): token and pool information</li>
     <li><b>Jupiter</b> (<code>lite-api.jup.ag</code>, or <code>api.jup.ag</code> with your own API key if you add one): token prices, token info and swap quotes used to simulate fills</li>
-    <li><b>Coinbase</b> (<code>api.coinbase.com</code>): the SOL to USD price</li>
+    <li><b>Coinbase</b> (<code>api.coinbase.com</code>): the SOL and ETH to USD prices</li>
     <li><b>Solana RPC</b>: the public endpoint <code>api.mainnet-beta.solana.com</code>, a fallback public endpoint <code>solana.leorpc.com</code>, or the RPC URL you enter in Settings. Used for on-chain checks (such as early-block buyers and token authorities) and for live prices over a websocket.</li>
+    <li><b>Ethereum and Base RPC</b>: the public endpoints <code>ethereum.publicnode.com</code>, <code>eth.drpc.org</code>, <code>base-rpc.publicnode.com</code> and <code>mainnet.base.org</code>, to read the live price from a coin’s trading pool.</li>
   </ul>
   <p>These services receive the request like any website visit (including your IP address) under their own privacy policies. New Era sends them no personal information.</p>
 
   <h2>Pages New Era runs on</h2>
-  <p>The paper-trading panel appears on token pages of supported trading sites (pump.fun, Axiom, GMGN, Photon, BullX, DexScreener, Birdeye, Padre and Jupiter). It reads the token address from the page link and, on Axiom, a few public numbers shown on the token page (such as global fees and ATH). It does not read or change your account on those sites, your wallet connection, or anything you type there.</p>
+  <p>The paper-trading panel appears on token pages of supported trading sites (pump.fun, Axiom, GMGN, Photon, BullX, DexScreener, Birdeye, Padre, Jupiter and Uniswap). It reads the token address from the page link and, on Axiom, a few public numbers shown on the token page (such as global fees and ATH). It does not read or change your account on those sites, your wallet connection, or anything you type there.</p>
 
   <h2>What New Era never does</h2>
   <ul>
